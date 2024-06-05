@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 03: Templates with Control Structures</title>
+</head>
+<body>
+    <h1>Example 03: Templates with Control Structures</h1>
+
+    <h2>Conditionals</h2>
+
+    {% if my_bool %}
+    {% endif %}
+
+    {% if my_bool %}
+    {% else %}
+    {% endif %}
+
+    {% if my_bool %}
+    {% elif my_bool2 %}
+    {% endif %}
+
+    {% if my_bool %}
+    {% elif my_bool2 %}
+    {% else %}
+    {% endif %}
+
+    <h2>Iteration</h2>
+
+    Iterating lists
+
+    <ul>
+    {% for item in my_list %}
+        <li>{{ item }}</li>
+    {% endfor %}
+    </ul>
+
+    Iterating dictionaries
+
+    {% for key, value in my_dict.items %}
+    {% endfor %}
+</body>
+</html>

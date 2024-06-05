@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 02: Templates with Context</title>
+</head>
+<body>
+    <h1>Example 02: Templates with Context</h1>
+    
+    <p>This is a template with context.</p>
+
+    
+    <h2>Rendering variables</h2>
+
+    <p>TODO ...</p>
+
+    {{ name }}
+
+    {{ person.lastname }}, {{ person.firstname }}
+
+
+    <h2>Filters</h2>
+
+    <p>TODO ...</p>
+
+
+    <h2>HTML Escaping</h2>
+
+    See also <a href="https://docs.djangoproject.com/en/5.0/ref/templates/language/#automatic-html-escaping">Automatic HTML escaping</a>.
+
+    <p>By default, all variables are escaped:</p>
+
+    {{ my_html }}
+
+    <p>You can turn off escaping for a section of a template:</p>
+
+    {% autoescape off %}
+    {{ my_html }}
+    {% endautoescape %}
+
+    <p>You can turn off escape for a single variable:</p>
+
+    {{ my_html|safe }}
+
+    <p>When turned off, you can still manually escape a single variable:</p>
+
+    {% autoescape off %}
+    {{ my_html|escape }}
+    {% endautoescape %}
+</body>
+</html>
