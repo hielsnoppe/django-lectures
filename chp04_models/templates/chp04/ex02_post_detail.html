@@ -1,0 +1,14 @@
+{% extends 'chp03/ex05_base.html' %}
+
+{% block title %}
+Example 02: Show Post Detail
+{% endblock %}
+
+{% block content %}
+    <h1>Example 02: Show Post Detail</h1>
+    
+    <h2>{{ post.title }}</h2>
+    <p>Category: {{ post.category.title }}</p>
+    
+    <p>{{ post.text }}</p>
+{% endblock %}

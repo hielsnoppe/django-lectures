@@ -11,20 +11,32 @@
     <h2>Conditionals</h2>
 
     {% if my_bool %}
+    ...
     {% endif %}
 
+
     {% if my_bool %}
+    ...
     {% else %}
+    ...
     {% endif %}
 
-    {% if my_bool %}
-    {% elif my_bool2 %}
-    {% endif %}
 
     {% if my_bool %}
+    ...
     {% elif my_bool2 %}
+    ...
+    {% endif %}
+
+
+    {% if my_bool %}
+    ...
+    {% elif my_bool2 %}
+    ...
     {% else %}
+    ...
     {% endif %}
+
 
     <h2>Iteration</h2>
 
@@ -38,7 +50,11 @@
 
     Iterating dictionaries
 
+    <dl>
     {% for key, value in my_dict.items %}
+        <dt>{{ key }}</dt>
+        <dd>{{ value }}</dd>
     {% endfor %}
+    </dl>
 </body>
 </html>

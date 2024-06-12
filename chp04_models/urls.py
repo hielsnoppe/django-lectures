@@ -1,5 +1,5 @@
 """
-URL configuration for djangolectures project.
+URL configuration for djangoexercises project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -14,13 +14,12 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
+
+from chp04_models import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('ch02/', include('ch02_routes_views.urls')),
-    path('chp03/', include('chp03_templates.urls')),
-    path('chp04/', include('chp04_models.urls')),
-    path('ch05/', include('ch05_forms.urls')),
+    path('posts/', views.ex01_post_list, name='post_list'),
+    path('posts/<int:id>', views.ex02_post_detail, name='ex02'),
+    path('categories/<int:id>', views.ex03_category_detail, name='ex03'),
 ]

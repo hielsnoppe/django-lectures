@@ -7,15 +7,24 @@ def ex01(request):
 
 def ex02(request):
     context = {
-        'my_variable': 'Some value'
+        'my_variable': 'Some value',
+        'person': {
+            'firstname': 'Donald',
+            'lastname': 'Duck'
+        },
+        'my_html': '<a href="https://example.com">Click me!</a>'
     }
     return render(request, 'chp03/ex02_context.html', context)
 
 def ex03(request):
     context = {
-        'my_list': [],
+        'my_bool': True,
+        'my_bool2': False,
+        'my_list': [ 'Apple', 'Banana', 'Lime' ],
         'my_dict': {
-            'key1': 'value1'
+            'Apple': 'Red',
+            'Banana': 'Yellow',
+            'Lime': 'Green'
         }
     }
     return render(request, 'chp03/ex03_control.html', context)

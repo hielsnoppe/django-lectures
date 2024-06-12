@@ -1,0 +1,13 @@
+{% extends 'chp03/ex05_base.html' %}
+
+{% block title %}Example: Create Post{% endblock %}
+
+{% block content %}
+<h1>Example: Create Post</h1>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_div }}
+    <input type="submit" value="Save Post">
+</form>
+{% endblock %}
