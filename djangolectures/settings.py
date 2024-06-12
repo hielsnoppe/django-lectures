@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ch02_routes_views',
-    'chp03_templates',
-    'chp04_models',
+    'ch03_templates',
+    'ch04_models',
     'ch05_forms',
 ]
 

@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class Chp03TemplatesConfig(AppConfig):
+class Ch03TemplatesConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'chp03_templates'
+    name = 'ch03_templates'

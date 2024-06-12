@@ -7,7 +7,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('chp04_models', '0001_initial'),
+        ('ch04_models', '0001_initial'),
     ]
 
     operations = [
@@ -21,6 +21,6 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='post',
             name='category',
-            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, to='chp04_models.category'),
+            field=models.ForeignKey(null=True, on_delete=django.db.models.deletion.SET_NULL, to='ch04_models.category'),
         ),
     ]

@@ -3,7 +3,7 @@ from django.shortcuts import render
 # Create your views here.
 
 def ex01(request):
-    return render(request, 'chp03/ex01_static.html')
+    return render(request, 'ch03/ex01_static.html')
 
 def ex02(request):
     context = {
@@ -14,7 +14,7 @@ def ex02(request):
         },
         'my_html': '<a href="https://example.com">Click me!</a>'
     }
-    return render(request, 'chp03/ex02_context.html', context)
+    return render(request, 'ch03/ex02_context.html', context)
 
 def ex03(request):
     context = {
@@ -27,10 +27,10 @@ def ex03(request):
             'Lime': 'Green'
         }
     }
-    return render(request, 'chp03/ex03_control.html', context)
+    return render(request, 'ch03/ex03_control.html', context)
 
 def ex04(request):
-    return render(request, 'chp03/ex04_include.html')
+    return render(request, 'ch03/ex04_include.html')
 
 def ex05(request):
-    return render(request, 'chp03/ex05_extends.html')
+    return render(request, 'ch03/ex05_extends.html')

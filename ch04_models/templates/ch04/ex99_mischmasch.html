@@ -1,0 +1,26 @@
+{% extends 'ch03/ex05_base.html' %}
+
+{% block title %}
+Example 99: ...
+{% endblock %}
+
+{% block content %}
+    <h1>Example 99: ...</h1>
+    
+    Der aktuelle Post (#{{ post.id }}):
+
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.text }}</p>
+
+    Alle anderen Posts:
+
+    <ul>
+    {% for post in posts_list %}
+    <li>
+        <a href="/chp04/posts/{{ post.id }}">
+            {{ post.title }}
+        </a>
+    </li>
+    {% endfor %}
+    </ul>
+{% endblock %}

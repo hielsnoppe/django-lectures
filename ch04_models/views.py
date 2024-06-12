@@ -12,7 +12,7 @@ def ex01_post_list(request):
     }
     return render(
         request,
-        'chp04/ex01_post_list.html',
+        'ch04/ex01_post_list.html',
         context
         )
 
@@ -23,7 +23,7 @@ def ex02_post_detail(request, id):
     }
     return render(
         request,
-        'chp04/ex02_post_detail.html',
+        'ch04/ex02_post_detail.html',
         context
     )
 
@@ -34,6 +34,6 @@ def ex03_category_detail(request, id):
     }
     return render(
         request,
-        'chp04/ex03_category_detail.html',
+        'ch04/ex03_category_detail.html',
         context
     )

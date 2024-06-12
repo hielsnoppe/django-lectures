@@ -16,7 +16,7 @@ Including another URLconf
 """
 from django.urls import path
 
-from chp03_templates import views
+from ch03_templates import views
 
 urlpatterns = [
     path('ex01/', views.ex01, name='ex01'),
